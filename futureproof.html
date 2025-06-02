@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Why Robotics is Future-Proof</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f5faff;
+      color: #222;
+    }
+
+    section.content {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0074d9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .resources {
+      background-color: #e6f2ff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    nav a.active {
+      color: #00fff7;
+      font-weight: 700;
+      position: relative;
+    }
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #00fff7;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #001f3f;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Styles for read more/less buttons */
+    .read-more-content {
+      display: none;
+    }
+    .read-more-content.active {
+      display: block;
+    }
+    .read-more-btn, .read-less-btn {
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    .read-more-btn:hover, .read-less-btn:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Placeholders for reusable components -->
+  <div id="header-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+
+  <section class="content">
+    <div class="card">
+      <h2>Robotics Is at the Heart of the Future Workforce</h2>
+      <p>
+        Automation, AI, and robotics are transforming industries like manufacturing, healthcare, logistics, agriculture, and even education. Learning robotics prepares students to thrive in a technology-driven world by equipping them with the skills to design, build, and manage robotic systems that are reshaping how we work and live.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Learning robotics opens doors to exciting careers where you can create robots for tasks like delivering packages or assisting doctors. You’ll gain hands-on skills that make you a valuable part of the future workforce. <a href="https://www.firstinspires.org/robotics/frc" target="_blank">Explore FIRST Robotics</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> Robotics education ensures your child is ready for industries that rely on automation and AI, such as smart manufacturing or healthcare robotics. These skills lead to stable, high-demand careers. <a href="https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English_0.pdf" target="_blank">Learn about NEP 2020</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Teaching robotics aligns with NEP 2020’s focus on future-ready skills, preparing students for Industry 4.0. Our programs provide resources to integrate robotics into your curriculum effectively. <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Discover Atal Tinkering Labs</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Robotics Is at the Heart of the Future Workforce')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Robotics Is at the Heart of the Future Workforce')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Builds Strong Foundations in 21st-Century Skills</h2>
+      <p>
+        Robotics education develops critical skills that apply across any career, including:
+        <ul>
+          <li>Problem-solving</li>
+          <li>Critical thinking</li>
+          <li>Creativity and innovation</li>
+          <li>Teamwork and collaboration</li>
+          <li>Coding and computational thinking</li>
+        </ul>
+        These skills ensure students are adaptable and prepared for diverse professional paths.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Robotics teaches you to solve problems creatively, like programming a robot to navigate a maze, and work in teams, skills that are valuable in any job. You’ll also learn coding, a must-have skill in tech. <a href="https://www.code.org/" target="_blank">Start coding with Code.org</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> These skills make your child versatile and competitive in fields beyond robotics, from engineering to business. Robotics fosters a growth mindset, preparing them for lifelong success. <a href="https://cbseacademic.nic.in/skill-education.html" target="_blank">Explore CBSE skill subjects</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Robotics programs provide tools to teach 21st-century skills in an engaging way, aligning with NEP 2020’s experiential learning goals. Our resources help you inspire students and meet curriculum standards. <a href="https://www.intel.com/content/www/us/en/education/k12/artificial-intelligence.html" target="_blank">Access AI teaching resources</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Builds Strong Foundations in 21st-Century Skills')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Builds Strong Foundations in 21st-Century Skills')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Supports Global Trends in Education & Industry</h2>
+      <p>
+        Robotics education aligns with global and national initiatives, including:
+        <ul>
+          <li>NEP 2020 and Atal Innovation Mission (India)</li>
+          <li>STEM education focus worldwide</li>
+          <li>Industry 4.0 and Digital India missions</li>
+          <li>Growing investment in smart cities, IoT, AI, and robotics R&D</li>
+        </ul>
+        This ensures students are in sync with the future of technology and innovation.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> By learning robotics, you’re part of global trends like smart cities and AI, preparing you for roles in cutting-edge industries. Participate in programs like Atal Tinkering Labs to stay ahead. <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Join Atal Tinkering Labs</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> Robotics aligns your child with initiatives like Digital India and Industry 4.0, ensuring they’re equipped for a tech-driven economy. These programs offer opportunities for recognition and growth. <a href="https://www.digitalindia.gov.in/" target="_blank">Learn about Digital India</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Robotics education supports NEP 2020 and global STEM trends, enhancing your teaching with relevant, future-focused content. Our resources help you integrate these trends into your classroom. <a href="https://www.niti.gov.in/atal-innovation-mission" target="_blank">Explore NITI Aayog’s AIM</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Supports Global Trends in Education & Industry')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Supports Global Trends in Education & Industry')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Opens Pathways to Lucrative, High-Growth Careers</h2>
+      <p>
+        Robotics education opens doors to high-demand careers, such as:
+        <ul>
+          <li>AI and machine learning specialists</li>
+          <li>Robotics engineers</li>
+          <li>Automation and control system experts</li>
+          <li>Data analysts & cybersecurity professionals</li>
+        </ul>
+        These fields offer competitive salaries and long-term growth opportunities.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Robotics can lead to exciting careers, like designing self-driving cars or AI systems. Start with our programs to build skills that top companies value. <a href="https://www.worldrobotolympiad.org/" target="_blank">Explore World Robot Olympiad</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> These careers are among the fastest-growing globally, offering your child financial stability and opportunities in industries like tech and healthcare. Robotics education is a smart investment. <a href="https://www.skillindia.gov.in/" target="_blank">Discover Skill India</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> By teaching robotics, you prepare students for high-growth careers, aligning with CBSE and NEP 2020’s focus on employability. Our training resources make it easy to guide them. <a href="https://www.aicte-india.org/education/skill-development" target="_blank">Learn about AICTE skill programs</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Opens Pathways to Lucrative, High-Growth Careers')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Opens Pathways to Lucrative, High-Growth Careers')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Future-Proofing = Being Tech-Ready, Not Tech-Dependent</h2>
+      <p>
+        Robotics education makes students producers and problem-solvers, not just consumers of technology. It encourages entrepreneurial thinking and ensures they can shape the future, not be left behind by it, by fostering adaptability and innovation.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Robotics empowers you to create solutions, like designing apps or robots for real-world problems. You’ll learn to innovate and lead, not just follow tech trends. <a href="https://www.stemrobo.com/" target="_blank">Start with STEMRobo</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> Your child will become a creator, not just a user, of technology, with skills to start businesses or lead projects. This mindset ensures they thrive in any future. <a href="https://cbseacademic.nic.in/" target="_blank">Explore CBSE resources</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Our programs teach students to think like entrepreneurs, aligning with NEP 2020’s innovation goals. You’ll have tools to foster creativity and leadership in your classroom. <a href="https://www.edx.org/learn/artificial-intelligence" target="_blank">Access AI courses on edX</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Future-Proofing = Being Tech-Ready, Not Tech-Dependent')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Future-Proofing = Being Tech-Ready, Not Tech-Dependent')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>How Can Someone with No Interest in Robotics Start?</h2>
+      <p>
+        Starting robotics doesn’t require an initial interest in robots—it begins with curiosity and connecting robotics to your passions. Here’s how:
+        <ul>
+          <li><strong>Start with Curiosity, Not Robotics:</strong> Explore what excites you—music, games, cars, or animals—and see how robotics fits. Love music? Make a robot that plays sounds. Like sports? Try a robo-soccer challenge. Enjoy games? Program a robot to play with you.</li>
+          <li><strong>Treat It Like a Toy, Not a Subject:</strong> Interest grows through play. Tinker with projects like a voice-activated robot car, a clap-activated light, or a DIY bug that scurries around. Experiment, break, fix, and explore without pressure.</li>
+          <li><strong>Show the "Why", Not Just the "How":</strong> Robotics is inspiring when you see its impact—robots perform surgeries, save lives, clean oceans, and drive Teslas. Discover what robots can achieve to spark your interest.</li>
+          <li><strong>Robotics is Hidden in Other Skills:</strong> Start with coding through games, design through art, or logic through puzzles, then apply these to robotics. These indirect paths make robotics approachable and fun.</li>
+        </ul>
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Don’t worry if robots seem complex—start with fun projects tied to your hobbies, like a robot that dances to your favorite song. Our programs make robotics easy and exciting, sparking your curiosity naturally. <a href="https://avishkaar.cc/" target="_blank">Explore Avishkaar’s kits</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> If your child isn’t interested in robotics, our approach connects it to their passions, making learning enjoyable. This builds confidence and skills for future opportunities in tech. <a href="https://30plus30.co.in" target="_blank">Learn about 30plus30’s programs</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Our resources help you introduce robotics through play and curiosity, engaging even reluctant students. Aligned with NEP 2020, these methods foster a love for STEM in your classroom. <a href="https://tinker.ly/" target="_blank">Discover Tinkerly’s approach</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'How Can Someone with No Interest in Robotics Start?')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'How Can Someone with No Interest in Robotics Start?')">Read Less</button>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Generic loader for header & footer
+    function loadComponent(id, url) {
+      fetch(url)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
+
+    // Load header and footer without callback
+    loadComponent('header-placeholder', 'header.html');
+    loadComponent('footer-placeholder', 'footer.html');
+
+    // Load navbar and highlight active link
+    function includeHTML(id, file, callback) {
+      fetch(file)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+          if (callback) callback();
+        });
+    }
+
+    includeHTML('navbar-placeholder', 'navbar.html', () => {
+      const path = window.location.pathname.split('/').pop().toLowerCase();
+
+      // Find all links inside navbar and add active class to matching href
+      const navLinks = document.querySelectorAll('#navbar-placeholder nav a');
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href').toLowerCase();
+        if (
+          href === path ||
+          (href === 'index.html' && (path === '' || path === 'index.html'))
+        ) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Read More/Read Less functionality
+    function toggleReadMore(button, sectionTitle) {
+      const card = button.parentElement;
+      const readMoreContent = card.querySelector('.read-more-content');
+      const readMoreBtn = card.querySelector('.read-more-btn');
+      const readLessBtn = card.querySelector('.read-less-btn');
+
+      if (readMoreContent.classList.contains('active')) {
+        readMoreContent.classList.remove('active');
+        readMoreBtn.style.display = 'block';
+        readLessBtn.style.display = 'none';
+      } else {
+        readMoreContent.classList.add('active');
+        readMoreBtn.style.display = 'none';
+        readLessBtn.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

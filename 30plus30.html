@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spotlight on 30plus30</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f5faff;
+      color: #222;
+    }
+
+    section.content {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0074d9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .resources {
+      background-color: #e6f2ff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    nav a.active {
+      color: #00fff7;
+      font-weight: 700;
+      position: relative;
+    }
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #00fff7;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #001f3f;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Styles for read more/less buttons */
+    .read-more-content {
+      display: none;
+    }
+    .read-more-content.active {
+      display: block;
+    }
+    .read-more-btn, .read-less-btn {
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    .read-more-btn:hover, .read-less-btn:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Placeholders for reusable components -->
+  <div id="header-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+
+  <section class="content">
+    <div class="card">
+      <h2>Company Profile</h2>
+      <p>
+        30plus30 is a leading organization dedicated to advancing robotics education across India. 
+        Our mission is to empower students and educators with cutting-edge robotics knowledge and hands-on experience, 
+        fostering creativity, innovation, and critical thinking through practical learning. We are committed to transforming education by integrating robotics and AI into classrooms, aligning with national initiatives like NEP 2020 and Atal Tinkering Labs. Learn more about us at <a href="https://30plus30.co.in" target="_blank">30plus30.co.in</a>.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> At 30plus30, you’ll dive into exciting robotics projects that teach you coding, engineering, and problem-solving. From building your first robot to exploring AI, our programs make learning fun and prepare you for future careers in technology. <a href="https://30plus30.co.in" target="_blank">Explore our programs</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> Our programs provide your child with skills that are in high demand, such as programming and critical thinking. By participating in 30plus30’s hands-on workshops, your child gains a competitive edge in STEM fields, ensuring they are ready for a technology-driven future. <a href="https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English_0.pdf" target="_blank">Learn about NEP 2020</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> 30plus30 supports teachers with comprehensive training and resources to integrate robotics into the curriculum. Our programs align with CBSE and NEP 2020 standards, making it easy to create engaging, student-centered lessons that foster innovation. <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Discover Atal Tinkering Labs</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Company Profile')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Company Profile')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Programs Offered</h2>
+      <p>
+        We provide a comprehensive suite of courses and workshops designed to align with the National Education Policy (NEP) 2020. Our programs cover foundational robotics, coding, AI integration, and real-world problem-solving skills that nurture future-ready learners. From beginner-level tinkering for young students to advanced AI and IoT modules for secondary students, our offerings cater to diverse age groups and skill levels, ensuring accessibility and engagement.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Our programs let you explore robotics through hands-on projects like building autonomous robots or programming sensors. Whether you’re new to coding or an advanced learner, our workshops make STEM exciting and prepare you for competitions like the World Robot Olympiad. <a href="https://30plus30.co.in" target="_blank">Check out our courses</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> 30plus30’s programs ensure your child develops critical skills like coding, problem-solving, and teamwork. Aligned with NEP 2020, our courses prepare students for careers in fields like robotics engineering, AI, and data science, giving them a head start in a competitive world. <a href="https://cbseacademic.nic.in/skill-education.html" target="_blank">Explore CBSE skill subjects</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Our workshops come with teacher guides, lesson plans, and training to integrate robotics into your classroom. Designed to meet NEP 2020’s experiential learning goals, our programs help you inspire students and foster a love for STEM. <a href="https://www.intel.com/content/www/us/en/education/k12/artificial-intelligence.html" target="_blank">Access AI teaching resources</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Programs Offered')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Programs Offered')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Success Stories</h2>
+      <p>
+        Schools and students who have participated in 30plus30 programs have demonstrated remarkable growth and achievements. From inspiring testimonials to documented case studies, our impact on robotics education continues to grow, driving excellence and enthusiasm in STEM fields. Our students have excelled in national competitions, built innovative projects, and developed a passion for technology that shapes their future.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Join the ranks of students who’ve built award-winning robots and competed in national events like the Atal Tinkering Marathon. Our programs help you showcase your talents and build confidence in STEM. <a href="https://30plus30.co.in" target="_blank">See our success stories</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> Our success stories highlight how students gain real-world skills and recognition through 30plus30’s programs. From winning competitions to pursuing STEM careers, your child can achieve their potential with our support. <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Learn about ATL competitions</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Schools partnered with 30plus30 have seen improved student engagement and academic outcomes. Our case studies show how robotics enhances learning, aligning with CBSE and NEP 2020 goals, and inspires students to excel. <a href="https://cbseacademic.nic.in/" target="_blank">Explore CBSE resources</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Success Stories')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Success Stories')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Why Choose Us as Your Robotics Trainers?</h2>
+      <p>
+        We are not just robotics trainers — we are passionate educators, innovators, and mentors dedicated to shaping future-ready minds. Our team brings a perfect blend of technical expertise and teaching experience. Here’s why choosing 30plus30 makes a difference:
+      </p>
+      <ul>
+        <li><strong>Experienced Team:</strong> Our trainers have hands-on experience in robotics, AI, and coding, with a strong background in real-world projects and education.</li>
+        <li><strong>Student-Centered Learning:</strong> We focus on interactive, project-based learning that makes robotics fun, practical, and easy to understand for all age groups.</li>
+        <li><strong>Customized Training:</strong> Whether you’re a school, college, or organization, we tailor our workshops to match your goals, age level, and technical background.</li>
+        <li><strong>Future-Focused:</strong> We don’t just teach how to build robots — we help develop critical thinking, problem-solving, creativity, and coding skills for the future.</li>
+        <li><strong>Proven Results:</strong> Our students have participated in national-level competitions, built innovative projects, and discovered a real passion for technology.</li>
+      </ul>
+      <p>
+        Learn more about our unique approach at <a href="https://30plus30.co.in" target="_blank">30plus30.co.in</a>.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Our trainers guide you through exciting projects, from simple circuits to AI-powered robots, making learning engaging and rewarding. You’ll gain skills that shine in competitions and future careers. <a href="https://www.worldrobotolympiad.org/" target="_blank">Explore World Robot Olympiad</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> Our experienced team ensures your child learns in a supportive, interactive environment. With customized programs, we help your child develop skills for high-demand fields like AI and robotics, boosting their confidence and future prospects. <a href="https://30plus30.co.in" target="_blank">Discover our training approach</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Partner with 30plus30 to bring expertly designed robotics programs to your school. Our trainers provide professional development and resources, aligning with NEP 2020 and CBSE standards to enhance your teaching and inspire students. <a href="https://www.aicte-india.org/education/skill-development" target="_blank">Learn about AICTE skill programs</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Why Choose Us as Your Robotics Trainers?')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Why Choose Us as Your Robotics Trainers?')">Read Less</button>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Generic loader for header & footer
+    function loadComponent(id, url) {
+      fetch(url)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
+
+    // Load header and footer without callback
+    loadComponent('header-placeholder', 'header.html');
+    loadComponent('footer-placeholder', 'footer.html');
+
+    // Load navbar and highlight active link
+    function includeHTML(id, file, callback) {
+      fetch(file)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+          if (callback) callback();
+        });
+    }
+
+    includeHTML('navbar-placeholder', 'navbar.html', () => {
+      const path = window.location.pathname.split('/').pop().toLowerCase();
+
+      // Find all links inside navbar and add active class to matching href
+      const navLinks = document.querySelectorAll('#navbar-placeholder nav a');
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href').toLowerCase();
+        if (
+          href === path ||
+          (href === 'index.html' && (path === '' || path === 'index.html'))
+        ) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

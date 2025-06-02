@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Why Robotics?</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f5faff;
+      color: #222;
+    }
+
+    section.content {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0074d9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #001f3f;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Styles for read more/less buttons */
+    .read-more-content {
+      display: none;
+    }
+    .read-more-content.active {
+      display: block;
+    }
+    .read-more-btn, .read-less-btn {
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    .read-more-btn:hover, .read-less-btn:hover {
+      background-color: #005bb5;
+    }
+
+    /* Styles for the table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background-color: #e6f2ff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #004080;
+      color: white;
+      font-weight: 600;
+    }
+    td {
+      background-color: #f9faff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Placeholders for reusable components -->
+  <div id="header-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+
+  <section class="content">
+    <div class="card">
+      <h2>What is Robotics?</h2>
+      <p>
+        Robotics is the science of designing, building, and programming machines called robots. But it’s much more than that. It’s a fun and creative way to learn science, technology, engineering, and mathematics — what we call STEM. Robotics helps us learn by doing. Instead of just reading theories in books, we actually get to build things, test them, and fix them if they don’t work. This makes learning practical and exciting. Robotics also teaches us how to solve problems. Whether it’s getting a robot to move in the right direction or making it pick up an object, we learn to think logically, experiment with ideas, and never give up — even when things don’t work at first. It also encourages creativity. You’re not just following instructions; you’re inventing, designing, and building something new from your imagination.
+      </p>
+      <div class="read-more-content">
+        <p>
+          For <strong>students</strong>, robotics is an engaging way to dive into STEM, allowing them to create robots that can perform tasks like navigating mazes or responding to sensors. This hands-on experience makes learning interactive and memorable, fostering a love for discovery.
+        </p>
+        <p>
+          <strong>Parents</strong> will appreciate how robotics sparks curiosity and builds resilience in their children. By working through challenges, students develop a growth mindset, learning to iterate and improve their designs, which prepares them for real-world problem-solving.
+        </p>
+        <p>
+          For <strong>educators</strong>, robotics is a powerful tool to make STEM education dynamic. It aligns with initiatives like the National Education Policy 2020, encouraging experiential learning and helping students connect theoretical concepts to practical applications.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'What is Robotics?')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'What is Robotics?')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Robotics & AI</h2>
+      <p>
+        Robotics and Artificial Intelligence (AI) are closely related fields, but they are not the same. Robotics is the branch of technology that deals with the design, construction, operation, and application of robots. Artificial Intelligence (AI) is the branch of computer science that focuses on creating systems capable of performing tasks that require human intelligence, such as learning, reasoning, and problem-solving. AI gives robots the ability to act smartly, enabling decision-making and learning. The following table illustrates their relationship:
+      </p>
+      <table>
+        <tr>
+          <th>Robotics</th>
+          <th>Artificial Intelligence</th>
+        </tr>
+        <tr>
+          <td>Physical machines that can perform tasks</td>
+          <td>Software that simulates human intelligence</td>
+        </tr>
+        <tr>
+          <td>Build robots that can perform mechanical tasks</td>
+          <td>Make machines (including robots) think and learn</td>
+        </tr>
+        <tr>
+          <td>AI gives robots the ability to act smartly (decision-making, learning)</td>
+          <td>AI can be used in many fields, but in robotics, it helps make robots autonomous</td>
+        </tr>
+      </table>
+      <p>
+        <strong>Real-Life Examples:</strong> Self-driving cars combine robotics (sensors, mechanical parts) with AI (decision-making, path planning). Humanoid robots like Sophia use robotics for physical movement and AI for facial recognition and conversation. In summary, robotics provides the hardware (the body), while AI provides the intelligence (the brain).
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>Students</strong> can explore the synergy of robotics and AI by programming robots to perform intelligent tasks, such as recognizing objects or adapting to new environments. For example, they can create a robot that uses AI to detect obstacles and adjust its path, introducing them to cutting-edge technologies shaping the future.
+        </p>
+        <p>
+          For <strong>parents</strong>, robotics and AI education equips their children with skills for high-demand careers in fields like autonomous vehicles, healthcare robotics, and smart manufacturing. This ensures they are prepared for a technology-driven world, with opportunities in industries that are rapidly growing.
+        </p>
+        <p>
+          <strong>Educators</strong> can use robotics and AI to teach complex concepts like machine learning in an accessible way. By incorporating projects like programming a robot to respond to voice commands, educators align with initiatives like Atal Tinkering Labs, fostering innovation and critical thinking in the classroom.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Robotics & AI')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Robotics & AI')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>21st Century Skills</h2>
+      <p>
+        Robotics empowers students with critical 21st-century skills such as problem-solving, logical thinking, collaboration, and digital literacy — preparing them for future careers in AI, automation, engineering, and more.
+      </p>
+      <div class="read-more-content">
+        <p>
+          For <strong>students</strong>, robotics projects like building a line-following robot teach them to analyze problems, write code, and work in teams, building skills that are essential in today’s technology-driven world.
+        </p>
+        <p>
+          <strong>Parents</strong> can feel confident that robotics education prepares their children for a competitive job market, equipping them with transferable skills like critical thinking and adaptability that are valued across industries.
+        </p>
+        <p>
+          <strong>Educators</strong> benefit from robotics as a versatile teaching tool that fosters skills outlined in modern curricula, such as computational thinking and collaboration, making lessons more engaging and relevant.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, '21st Century Skills')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, '21st Century Skills')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Hands-On Learning</h2>
+      <p>
+        Robotics brings learning to life. It allows students to apply math, science, and programming in a tangible way, making abstract concepts more accessible and fun.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>Students</strong> engage with hands-on robotics projects, such as programming a robot to complete a task, which helps them understand concepts like angles in math or physics principles like force and motion in a practical way.
+        </p>
+        <p>
+          For <strong>parents</strong>, hands-on learning through robotics ensures their children develop a deeper understanding of STEM subjects, boosting academic performance and fostering a passion for learning.
+        </p>
+        <p>
+          <strong>Educators</strong> can use robotics to create interactive lessons that make complex topics more relatable, supporting experiential learning goals set by initiatives like the CBSE and Atal Innovation Mission.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Hands-On Learning')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Hands-On Learning')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Career Pathways</h2>
+      <p>
+        Students interested in AI, machine learning, IoT, aerospace, and advanced manufacturing benefit immensely from early exposure to robotics and automation systems.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>Students</strong> gain a head start in high-demand fields by learning robotics, which introduces them to skills like coding, circuit design, and automation used in industries like robotics engineering and data science.
+        </p>
+        <p>
+          <strong>Parents</strong> can see robotics as a gateway to lucrative and fulfilling careers for their children, from developing smart devices to working on space exploration technologies.
+        </p>
+        <p>
+          For <strong>educators</strong>, robotics education aligns with career-focused learning, preparing students for roles in emerging fields and supporting initiatives like NITI Aayog’s push for innovation-driven education.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Career Pathways')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Career Pathways')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Inclusion and Creativity</h2>
+      <p>
+        Robotics offers an inclusive platform that encourages creativity. Every student, regardless of background, can contribute by building, coding, or designing solutions.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>Students</strong> from diverse backgrounds can express their creativity through robotics, whether by designing a unique robot or coding a custom behavior, fostering a sense of ownership and pride in their work.
+        </p>
+        <p>
+          <strong>Parents</strong> will value how robotics creates an inclusive environment where all children can succeed, building confidence and encouraging creative problem-solving across skill levels.
+        </p>
+        <p>
+          <strong>Educators</strong> can use robotics to promote inclusivity, allowing students with different strengths to collaborate on projects, aligning with educational goals of equity and creativity in learning.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Inclusion and Creativity')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Inclusion and Creativity')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Why Robotics is Necessary for Students</h2>
+      <p>
+        Robotics is increasingly becoming an essential part of school education because it helps students develop critical 21st-century skills. It integrates Science, Technology, Engineering, and Mathematics (STEM) in a hands-on, engaging way, helping students apply classroom knowledge to real-world problems. Building and programming robots teaches students how to break down problems into steps, think logically, and find creative solutions. Robotics also inspires innovation, encouraging experimentation and thinking outside the box. Most robotics projects are group-based, teaching collaboration, role-sharing, and effective communication, just like in real-world projects. Robotics introduces students early to skills that are in high demand in fields like AI, automation, engineering, and data science, preparing them for the future workforce. As quoted, "Robotics in schools isn’t just about building robots — it's about building thinkers, doers, and leaders of tomorrow."
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>Students</strong> benefit from robotics by gaining practical experience in STEM, learning to tackle challenges methodically, and developing skills that prepare them for dynamic careers in technology and innovation.
+        </p>
+        <p>
+          For <strong>parents</strong>, robotics education offers peace of mind that their children are learning relevant skills, from coding to teamwork, that will help them thrive in a rapidly evolving job market.
+        </p>
+        <p>
+          <strong>Educators</strong> can use robotics to create engaging, interdisciplinary lessons that meet modern educational standards, fostering a generation of innovative thinkers equipped for future challenges.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Why Robotics is Necessary for Students')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Why Robotics is Necessary for Students')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Learn More</h2>
+      <p>
+        Learn more from
+        <a href="https://cbseacademic.nic.in" target="_blank" rel="noopener noreferrer">CBSE</a>
+        and
+        <a href="https://aim.gov.in" target="_blank" rel="noopener noreferrer">NITI Aayog (Atal Innovation Mission)</a>
+        initiatives supporting robotics and tinkering labs in schools.
+      </p>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Generic loader for header & footer
+    function loadComponent(id, url) {
+      fetch(url)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
+
+    // Load header and footer without callback
+    loadComponent('header-placeholder', 'header.html');
+    loadComponent('footer-placeholder', 'footer.html');
+
+    // Load navbar and highlight active link
+    function includeHTML(id, file, callback) {
+      fetch(file)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+          if (callback) callback();
+        });
+    }
+
+    includeHTML('navbar-placeholder', 'navbar.html', () => {
+      const path = window.location.pathname.split('/').pop().toLowerCase();
+
+      // Find all links inside navbar and add active class to matching href
+      const navLinks = document.querySelectorAll('#navbar-placeholder nav a');
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href').toLowerCase();
+        if (
+          href === path ||
+          (href === 'index.html' && (path === '' || path === 'index.html'))
+        ) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Read More/Read Less functionality
+    function toggleReadMore(button, sectionTitle) {
+      const card = button.parentElement;
+      const readMoreContent = card.querySelector('.read-more-content');
+      const readMoreBtn = card.querySelector('.read-more-btn');
+      const readLessBtn = card.querySelector('.read-less-btn');
+
+      if (readMoreContent.classList.contains('active')) {
+        readMoreContent.classList.remove('active');
+        readMoreBtn.style.display = 'block';
+        readLessBtn.style.display = 'none';
+      } else {
+        readMoreContent.classList.add('active');
+        readMoreBtn.style.display = 'none';
+        readLessBtn.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

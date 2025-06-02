@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EdTech & Robotics in Education</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fdfefe;
+      color: #222;
+    }
+
+    section.content {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .info-box {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #0066cc;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Styles for active navbar link */
+    nav a.active {
+      color: #00fff7;
+      font-weight: 700;
+      position: relative;
+    }
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #00fff7;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #003366;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Styles for read more/less buttons */
+    .read-more-content {
+      display: none;
+    }
+    .read-more-content.active {
+      display: block;
+    }
+    .read-more-btn, .read-less-btn {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    .read-more-btn:hover, .read-less-btn:hover {
+      background-color: #005f8c;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+
+  <section class="content">
+    <div class="info-box">
+      <h2>The Rise of EdTech in Schools</h2>
+      <p>
+        EdTech companies are transforming classrooms with smart tools, online platforms, and robotics kits. These solutions provide experiential learning aligned with NEP 2020 and enhance teaching through gamification, interactivity, and AI. By integrating digital tools like interactive learning apps, virtual labs, and robotics kits, EdTech makes education more engaging and accessible, fostering skills like critical thinking, collaboration, and digital literacy that are essential for the 21st century.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> EdTech tools, such as robotics kits and coding platforms, allow you to learn through interactive projects like building a robot or creating a game. These hands-on experiences make complex concepts like programming and AI fun and understandable, preparing you for future careers in technology. <a href="https://www.code.org/" target="_blank">Explore coding with Code.org</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> EdTech ensures your children gain practical skills in a dynamic learning environment. Tools like virtual classrooms and robotics programs align with NEP 2020’s focus on experiential learning, helping your child excel academically and develop skills for high-demand fields like AI and data science. <a href="https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English_0.pdf" target="_blank">Learn about NEP 2020</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> EdTech platforms provide resources like lesson plans, training modules, and interactive tools to make teaching more effective. By incorporating robotics and AI into lessons, you can create engaging, student-centered classrooms that meet NEP 2020’s goals of fostering innovation and critical thinking. <a href="https://www.intel.com/content/www/us/en/education/k12/artificial-intelligence.html" target="_blank">Access AI teaching resources</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'The Rise of EdTech in Schools')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'The Rise of EdTech in Schools')">Read Less</button>
+    </div>
+
+    <div class="info-box">
+      <h2>Robotics as a Core Offering</h2>
+      <p>
+        Robotics is no longer an extracurricular activity—it’s central to how students learn programming, mechanics, electronics, and logical thinking. Many EdTech providers now offer curriculum-integrated robotics programs that align with CBSE’s skill subjects and NEP 2020’s focus on experiential learning. These programs teach students to design, build, and program robots, fostering a deep understanding of STEM concepts through hands-on projects.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Robotics programs let you create projects like autonomous robots or IoT devices, helping you master coding and engineering skills. These projects make learning exciting and prepare you for careers in fields like robotics engineering and automation. <a href="https://www.stemrobo.com/" target="_blank">Discover robotics programs</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> Robotics education equips your child with practical skills that are in high demand, such as programming and problem-solving. By engaging in curriculum-integrated robotics, your child gains a competitive edge in STEM fields, ensuring readiness for future academic and professional opportunities. <a href="https://cbseacademic.nic.in/skill-education.html" target="_blank">Explore CBSE skill subjects</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Robotics programs come with teacher training and ready-to-use lesson plans, making it easy to integrate into the curriculum. They align with NEP 2020’s emphasis on hands-on learning, enabling you to teach complex STEM concepts in an engaging way while meeting educational standards. <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Learn about Atal Tinkering Labs</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Robotics as a Core Offering')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Robotics as a Core Offering')">Read Less</button>
+    </div>
+
+    <div class="info-box">
+      <h2>Popular Robotics & STEM EdTech Companies</h2>
+      <p>
+        Companies like <strong>Avishkaar</strong>, <strong>STEMpedia</strong>, <strong>LeapLearner</strong>, and <strong>Tinkerly</strong> are delivering robotics solutions to schools across India. These companies provide hardware (e.g., robotics kits, sensors), software (e.g., coding platforms), and teacher training modules that integrate directly into the school curriculum, supporting NEP 2020’s vision of technology-driven education and fostering innovation.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Companies like Avishkaar and STEMpedia offer user-friendly robotics kits that let you build and program robots, from simple line-followers to complex AI-powered devices. These tools make learning fun and help you develop skills for competitions like the FIRST Robotics Challenge. <a href="https://avishkaar.cc/" target="_blank">Explore Avishkaar’s robotics kits</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> These EdTech companies provide structured programs that align with CBSE and NEP 2020, ensuring your child learns cutting-edge skills in a supportive environment. Their focus on hands-on learning fosters creativity and prepares your child for careers in technology. <a href="https://thestempedia.com/" target="_blank">Discover STEMpedia’s solutions</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> EdTech firms like LeapLearner and Tinkerly offer comprehensive resources, including training workshops and curriculum guides, to help you teach robotics effectively. These tools align with Atal Tinkering Labs and CBSE skill subjects, enhancing classroom engagement and learning outcomes. <a href="https://tinker.ly/" target="_blank">Learn about Tinkerly’s programs</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Popular Robotics & STEM EdTech Companies')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Popular Robotics & STEM EdTech Companies')">Read Less</button>
+    </div>
+
+    <div class="info-box">
+      <h2>International Sessions on Robotics & AI for Students</h2>
+      <p>
+        International sessions on robotics and AI provide students with global exposure to cutting-edge technologies and opportunities to collaborate with peers worldwide. Programs like FIRST Robotics Competitions, World Robot Olympiad (WRO), and online platforms like Coursera and edX offer workshops, certifications, and competitions that teach advanced robotics and AI concepts, aligning with NEP 2020’s emphasis on global competitiveness and innovation.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Participating in international sessions, such as the FIRST Robotics Competition or WRO, allows you to compete globally, learn from experts, and build advanced robots. Online courses on platforms like Coursera offer certifications in AI and robotics, enhancing your skills and resume. <a href="https://www.firstinspires.org/robotics/frc" target="_blank">Join FIRST Robotics Competition</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> These global programs expose your child to world-class learning opportunities, fostering skills like teamwork, innovation, and global awareness. Participation in international competitions can lead to scholarships and recognition, boosting their academic and career prospects. <a href="https://www.worldrobotolympiad.org/" target="_blank">Explore World Robot Olympiad</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> International sessions provide resources like webinars, training programs, and competition frameworks to enhance your teaching. Platforms like edX offer free courses on robotics and AI, enabling you to integrate global best practices into your classroom. <a href="https://www.edx.org/learn/artificial-intelligence" target="_blank">Access AI courses on edX</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'International Sessions on Robotics & AI')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'International Sessions on Robotics & AI')">Read Less</button>
+    </div>
+
+    <div class="info-box">
+      <h2>Government & Private Partnerships</h2>
+      <p>
+        CBSE, AICTE, and NITI Aayog have encouraged partnerships between schools and private EdTech firms to foster innovation and skills via platforms like ATL labs and Skill India missions. These collaborations provide schools with resources, training, and technology to implement robotics and AI education effectively, aligning with national educational goals.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Partnerships bring advanced tools like robotics kits and AI software to your school, enabling you to work on real-world projects. Programs like Atal Tinkering Labs offer opportunities to participate in national innovation challenges, boosting your skills and confidence. <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Learn about ATL labs</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> These partnerships ensure your child has access to state-of-the-art resources and training, aligning with Skill India’s focus on employability. They enhance your child’s learning experience and prepare them for careers in emerging technologies. <a href="https://www.skillindia.gov.in/" target="_blank">Explore Skill India Mission</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Collaborations with EdTech firms provide professional development, curriculum support, and access to advanced technologies. These partnerships help you meet NEP 2020’s goals and deliver high-quality STEM education in line with CBSE and AICTE standards. <a href="https://www.aicte-india.org/education/skill-development" target="_blank">Discover AICTE skill programs</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Government & Private Partnerships')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Government & Private Partnerships')">Read Less</button>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Load header, navbar, and footer dynamically
+    function loadComponent(id, url) {
+      fetch(url)
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
+
+    loadComponent('header-placeholder', 'header.html');
+
+    // Navbar with active link highlight
+    function loadNavbar() {
+      fetch('navbar.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+
+          const path = window.location.pathname.split('/').pop().toLowerCase();
+          const navLinks = document.querySelectorAll('#navbar-placeholder nav a');
+          navLinks.forEach(link => {
+            const href = link.getAttribute('href').toLowerCase();
+            if (
+              href === path ||
+              (href === 'index.html' && (path === '' || path === 'index.html'))
+            ) {
+              link.classList.add('active');
+            }
+          });
+        });
+    }
+
+    loadNavbar();
+
+    loadComponent('footer-placeholder', 'footer.html');
+
+    // Read More/Read Less functionality
+    function toggleReadMore(button, sectionTitle) {
+      const infoBox = button.parentElement;
+      const readMoreContent = infoBox.querySelector('.read-more-content');
+      const readMoreBtn = infoBox.querySelector('.read-more-btn');
+      const readLessBtn = infoBox.querySelector('.read-less-btn');
+
+      if (readMoreContent.classList.contains('active')) {
+        readMoreContent.classList.remove('active');
+        readMoreBtn.style.display = 'block';
+        readLessBtn.style.display = 'none';
+      } else {
+        readMoreContent.classList.add('active');
+        readMoreBtn.style.display = 'none';
+        readLessBtn.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

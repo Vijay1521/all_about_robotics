@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robotics & NEP 2020</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f5faff;
+      color: #222;
+    }
+
+    section.content {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0074d9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .resources {
+      background-color: #e6f2ff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    /* Styles for active navbar link */
+    nav a.active {
+      color: #00fff7;
+      font-weight: 700;
+      position: relative;
+    }
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #00fff7;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #001f3f;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Styles for read more/less buttons */
+    .read-more-content {
+      display: none;
+    }
+    .read-more-content.active {
+      display: block;
+    }
+    .read-more-btn, .read-less-btn {
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    .read-more-btn:hover, .read-less-btn:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Placeholders for reusable components -->
+  <div id="header-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+
+  <section class="content">
+    <div class="card">
+      <h2>NEP 2020 Vision</h2>
+      <p>
+        The National Education Policy 2020 by the Government of India emphasizes
+        experiential learning, critical thinking, and integration of technology.
+        Robotics is a perfect tool to deliver these objectives through hands-on,
+        inquiry-based activities.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Foundational, Preparatory, and Secondary Stages</h2>
+      <p>
+        Robotics can be introduced at the Foundational Stage via tinkering
+        activities and expanded in Preparatory and Secondary Stages with more
+        advanced coding, electronics, and AI modules, aligning with the NEP’s
+        vision of flexibility and depth in learning.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Encouraging Creativity and Innovation</h2>
+      <p>
+        NEP 2020 promotes creativity, problem-solving, and the maker mindset.
+        Robotics builds these capacities by encouraging students to design,
+        test, and iterate their own solutions in a structured yet open-ended
+        format.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Importance of Robotics and AI as per GOI, NEP, and NITI Aayog</h2>
+      <p>
+        Robotics and related skills like coding, AI, and STEM education are highly prioritized by the Government of India, the National Education Policy (NEP) 2020, and NITI Aayog. These initiatives aim to transform India into a global knowledge superpower by equipping students with 21st-century skills essential for a technology-driven future. Robotics and AI are not just extracurricular activities but integral components of India’s educational vision, fostering innovation, critical thinking, and employability.
+      </p>
+      <p>
+        <strong>1. National Education Policy (NEP) 2020:</strong> NEP 2020 emphasizes the integration of coding, computational thinking, artificial intelligence, and robotics into the school curriculum starting from Grade 6. This aligns with the policy’s focus on experiential learning, critical thinking, and problem-solving. Key highlights include:
+      </p>
+      <ul>
+        <li>Introduction of coding as a skill from Grade 6 to build computational thinking.</li>
+        <li>Promotion of hands-on, STEM-based activities to make learning engaging and practical.</li>
+        <li>Emphasis on critical thinking, logical reasoning, and creativity through technology-driven pedagogy.</li>
+        <li>Support for digital literacy and technology integration to prepare students for future careers.</li>
+      </ul>
+      <p>
+        NEP 2020 envisions a holistic, multidisciplinary education system that prepares students for the Fourth Industrial Revolution, where technologies like robotics and AI are pivotal. By embedding these subjects early, schools can nurture a generation of innovators ready to tackle global challenges. <a href="https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English_0.pdf" target="_blank">Learn more about NEP 2020</a>.
+      </p>
+      <p>
+        <strong>2. NITI Aayog Initiatives:</strong> Through the Atal Innovation Mission (AIM), NITI Aayog has launched Atal Tinkering Labs (ATLs) in over 10,000 schools across India, providing students access to robotics kits, 3D printers, and IoT tools. ATLs foster a culture of innovation and entrepreneurship by enabling students to “learn by doing.” Objectives include:
+      </p>
+      <ul>
+        <li>Encouraging hands-on experimentation with robotics, AI, and design thinking.</li>
+        <li>Developing problem-solving mindsets aligned with national initiatives like Startup India and Digital India.</li>
+        <li>Equipping students with skills for a tech-driven economy, enhancing employability.</li>
+        <li>Providing mentoring and resources to spark creativity and innovation.</li>
+      </ul>
+      <p>
+        ATLs empower students to create prototypes, solve real-world problems, and participate in national competitions like the Atal Tinkering Marathon, aligning with NEP 2020’s vision. <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Explore Atal Tinkering Labs</a>.
+      </p>
+      <p>
+        <strong>3. Government of India – Other Key Efforts:</strong> The Central Board of Secondary Education (CBSE) and the All India Council for Technical Education (AICTE) have introduced robotics, AI, and coding as subjects or electives. CBSE’s skill modules for Grades VI-VIII include coding and data science, while AI and robotics are offered as electives in Grades IX-XII. The Samagra Shiksha Abhiyan supports the establishment of ICT and robotics labs in schools, ensuring access to modern technology. These efforts align with the Skill India Mission, promoting vocational training in emerging technologies to bridge the gap between education and industry needs.
+      </p>
+      <p>
+        <strong>In Summary:</strong> Robotics and AI are integral to India’s educational transformation. By implementing robotics training, schools align with NEP 2020’s guidelines, NITI Aayog’s innovation goals, and government-backed skill development initiatives. This gives students a competitive edge, enhances schools’ reputations, and contributes to India’s vision of becoming a global leader in technology and innovation.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>For Students:</strong> Robotics and AI education offers hands-on opportunities to build and program robots, fostering skills like problem-solving, coding, and creativity. For example, students can participate in projects like designing a robot to navigate obstacles, which teaches them to apply STEM concepts practically. These skills prepare you for exciting careers in fields like robotics engineering, AI development, and smart manufacturing, which are in high demand globally. <a href="https://www.stemrobo.com/" target="_blank">Learn how to start with robotics</a>.
+        </p>
+        <p>
+          <strong>For Parents:</strong> Robotics and AI education equips your children with future-ready skills, ensuring they are competitive in a technology-driven job market. Programs like Atal Tinkering Labs and CBSE’s skill subjects provide structured learning environments that foster innovation and resilience. Your child can explore diverse career paths, from aerospace to healthcare robotics, while developing critical thinking and teamwork skills valued by employers. <a href="https://cbseacademic.nic.in/skill-education.html" target="_blank">Discover CBSE’s skill education programs</a>.
+        </p>
+        <p>
+          <strong>For Educators:</strong> Integrating robotics and AI into the curriculum aligns with NEP 2020’s focus on experiential learning and technology integration. CBSE’s AI Facilitator Handbook, developed with Intel, provides resources to teach these subjects effectively. Robotics labs and ATLs enable you to create engaging, interdisciplinary lessons that meet modern educational standards, preparing students for the challenges of the 21st century. <a href="https://www.intel.com/content/www/us/en/education/k12/artificial-intelligence.html" target="_blank">Access AI teaching resources</a>.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Importance of Robotics and AI')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Importance of Robotics and AI')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>Support from CBSE & NITI Aayog</h2>
+      <p>
+        Initiatives like
+        <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank"
+          >Atal Tinkering Labs (ATL)</a
+        >
+        by NITI Aayog and
+        <a href="https://cbseacademic.nic.in/" target="_blank"
+          >CBSE's Skill Subjects</a
+        >
+        have promoted robotics, AI, and coding across thousands of schools in
+        India, aligning directly with NEP’s goals.
+      </p>
+    </div>
+
+    <div class="resources">
+      <h3>Useful Links:</h3>
+      <ul>
+        <li>
+          <a
+            href="https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English_0.pdf"
+            target="_blank"
+            >NEP 2020 Full Document</a
+          >
+        </li>
+        <li><a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank"
+          >Atal Innovation Mission (ATL)</a
+        ></li>
+        <li>
+          <a href="https://cbseacademic.nic.in/skill-education.html" target="_blank"
+            >CBSE Skill Education</a
+          >
+        </li>
+        <li>
+          <a href="https://www.niti.gov.in/atal-innovation-mission" target="_blank"
+            >NITI Aayog Atal Innovation Mission</a
+          >
+        </li>
+        <li>
+          <a href="https://www.aicte-india.org/education/skill-development" target="_blank"
+            >AICTE Skill Development Programs</a
+          >
+        </li>
+        <li>
+          <a href="https://samagrashiksha.in/" target="_blank"
+            >Samagra Shiksha Abhiyan</a
+          >
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Generic loader for header & footer
+    function loadComponent(id, url) {
+      fetch(url)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
+
+    // Load header and footer without callback
+    loadComponent('header-placeholder', 'header.html');
+    loadComponent('footer-placeholder', 'footer.html');
+
+    // Load navbar and highlight active link
+    function includeHTML(id, file, callback) {
+      fetch(file)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+          if (callback) callback();
+        });
+    }
+
+    includeHTML('navbar-placeholder', 'navbar.html', () => {
+      const path = window.location.pathname.split('/').pop().toLowerCase();
+
+      // Find all links inside navbar and add active class to matching href
+      const navLinks = document.querySelectorAll('#navbar-placeholder nav a');
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href').toLowerCase();
+        if (
+          href === path ||
+          (href === 'index.html' && (path === '' || path === 'index.html'))
+        ) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Read More/Read Less functionality
+    function toggleReadMore(button, sectionTitle) {
+      const card = button.parentElement;
+      const readMoreContent = card.querySelector('.read-more-content');
+      const readMoreBtn = card.querySelector('.read-more-btn');
+      const readLessBtn = card.querySelector('.read-less-btn');
+
+      if (readMoreContent.classList.contains('active')) {
+        readMoreContent.classList.remove('active');
+        readMoreBtn.style.display = 'block';
+        readLessBtn.style.display = 'none';
+      } else {
+        readMoreContent.classList.add('active');
+        readMoreBtn.style.display = 'none';
+        readLessBtn.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

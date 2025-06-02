@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robotics in Education</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f5faff;
+      color: #222;
+    }
+
+    section.content {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #004080;
+      margin-top: 0;
+    }
+
+    a {
+      color: #0074d9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .resources {
+      background-color: #e6f2ff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    /* Styles for active navbar link */
+    nav a.active {
+      color: #00fff7;
+      font-weight: 700;
+      position: relative;
+    }
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #00fff7;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #001f3f;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Styles for read more/less buttons */
+    .read-more-content {
+      display: none;
+    }
+    .read-more-content.active {
+      display: block;
+    }
+    .read-more-btn, .read-less-btn {
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    .read-more-btn:hover, .read-less-btn:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Placeholders for reusable components -->
+  <div id="header-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+
+  <section class="content">
+    <div class="card">
+      <h2>Robotics & AI</h2>
+      <p>
+        Integrate artificial intelligence into robotics to create smart, responsive systems that mimic human behavior and decision-making.
+      </p>
+      <div class="read-more-content">
+        <p>
+          For <strong>students</strong>, Robotics & AI offers an exciting opportunity to explore cutting-edge technology through hands-on projects, such as building robots that can navigate obstacles or respond to voice commands. This fosters critical thinking, problem-solving, and creativity.
+        </p>
+        <p>
+          <strong>Parents</strong> can see their children develop future-ready skills, preparing them for careers in technology-driven fields. AI-powered robotics projects encourage teamwork and innovation, making learning engaging and relevant.
+        </p>
+        <p>
+          For <strong>educators</strong>, integrating Robotics & AI into the curriculum aligns with modern educational goals, such as those outlined in the National Education Policy 2020. It provides tools to teach complex concepts like machine learning in an accessible way, inspiring students to pursue STEM careers.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'Robotics & AI')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'Robotics & AI')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>STEM Learning</h2>
+      <p>
+        Robotics brings STEM to life, helping students understand science, technology, engineering, and mathematics in a practical way.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>Students</strong> benefit from interactive STEM learning by applying theoretical concepts to real-world scenarios, such as programming a robot to perform tasks. This hands-on approach makes abstract ideas tangible and boosts confidence in problem-solving.
+        </p>
+        <p>
+          For <strong>parents</strong>, STEM through robotics ensures their children gain a strong foundation in critical disciplines, enhancing their academic performance and opening doors to diverse career paths in engineering, data science, and more.
+        </p>
+        <p>
+          <strong>Educators</strong> can leverage robotics to make STEM subjects more engaging, using tools like Atal Tinkering Labs to create interdisciplinary projects. This approach supports experiential learning and helps meet curriculum standards while sparking student interest.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, 'STEM Learning')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, 'STEM Learning')">Read Less</button>
+    </div>
+
+    <div class="card">
+      <h2>3D Innovation</h2>
+      <p>
+        Design and print your own robots with 3D modeling and prototyping tools to unleash creativity and innovation.
+      </p>
+      <div class="read-more-content">
+        <p>
+          <strong>Students</strong> can explore their creativity by designing custom robot parts using 3D modeling software, learning about engineering principles and design thinking. This process empowers them to turn ideas into physical prototypes.
+        </p>
+        <p>
+          <strong>Parents</strong> will appreciate how 3D innovation encourages their children to think like inventors, fostering skills in design, precision, and problem-solving that are valuable in fields like engineering and product development.
+        </p>
+        <p>
+          For <strong>educators</strong>, 3D printing in robotics education provides a platform to teach design and manufacturing concepts. It aligns with initiatives like Atal Tinkering Labs, enabling students to create tangible solutions to real-world problems.
+        </p>
+      </div>
+      <button class="read-more-btn" onclick="toggleReadMore(this, '3D Innovation')">Read More</button>
+      <button class="read-less-btn" style="display: none;" onclick="toggleReadMore(this, '3D Innovation')">Read Less</button>
+    </div>
+
+    <div class="resources">
+      <h3>Useful Links:</h3>
+      <ul>
+        <li><a href="https://nep2020.gov.in/" target="_blank">National Education Policy 2020</a></li>
+        <li><a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Atal Tinkering Labs (ATL)</a></li>
+        <li><a href="https://cbseacademic.nic.in/" target="_blank">CBSE Academic Resources</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Generic loader for header & footer
+    function loadComponent(id, url) {
+      fetch(url)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
+
+    loadComponent('header-placeholder', 'header.html');
+    loadComponent('footer-placeholder', 'footer.html');
+
+    function includeHTML(id, file, callback) {
+      fetch(file)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+          if (callback) callback();
+        });
+    }
+
+    includeHTML('navbar-placeholder', 'navbar.html', () => {
+      const path = window.location.pathname.split('/').pop().toLowerCase();
+
+      const navLinks = document.querySelectorAll('#navbar-placeholder nav a');
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href').toLowerCase();
+        if (
+          href === path ||
+          (href === 'index.html' && (path === '' || path === 'index.html'))
+        ) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Read More/Read Less functionality
+    function toggleReadMore(button, sectionTitle) {
+      const card = button.parentElement;
+      const readMoreContent = card.querySelector('.read-more-content');
+      const readMoreBtn = card.querySelector('.read-more-btn');
+      const readLessBtn = card.querySelector('.read-less-btn');
+
+      if (readMoreContent.classList.contains('active')) {
+        readMoreContent.classList.remove('active');
+        readMoreBtn.style.display = 'block';
+        readLessBtn.style.display = 'none';
+      } else {
+        readMoreContent.classList.add('active');
+        readMoreBtn.style.display = 'none';
+        readLessBtn.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<style>
+  nav {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+  }
+  nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00fff7;
+    transition: width 0.3s;
+  }
+  nav a:hover {
+    color: #00fff7;
+  }
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  nav a.active {
+    color: #00fff7;
+  }
+
+  nav a.active::after {
+    width: 100%;
+  }
+</style>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="why.html">Why Robotics</a>
+  <a href="nep.html">NEP 2020</a>
+  <a href="edtech.html">EdTech</a>
+  <a href="30plus30.html">30plus30</a>
+  <a href="futureproof.html">Future-Proof Robotics</a>
+</nav>
