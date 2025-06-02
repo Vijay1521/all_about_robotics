@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frequently Asked Questions About Robotics Education</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f5faff;
+      color: #222;
+    }
+
+    section.content {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    h3 {
+      color: #005f8c;
+      margin-top: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0074d9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .resources {
+      background-color: #e6f2ff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    nav a.active {
+      color: #00fff7;
+      font-weight: 700;
+      position: relative;
+    }
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #00fff7;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #001f3f;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Search bar styles */
+    .search-container {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    #searchBar {
+      width: 100%;
+      max-width: 600px;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 2px solid #0074d9;
+      border-radius: 5px;
+      outline: none;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #searchBar:focus {
+      border-color: #005bb5;
+      box-shadow: 0 0 5px rgba(0, 116, 217, 0.3);
+    }
+
+    /* Form styles for Submit Your Concerns */
+    .form-container {
+      background: #e6f2ff;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #004080;
+    }
+
+    .form-container input,
+    .form-container textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+    }
+
+    .form-container button {
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+    }
+
+    .form-container button:hover {
+      background-color: #005bb5;
+    }
+
+    /* Hide questions when no match */
+    .faq-item.hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Placeholders for reusable components -->
+  <div id="header-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+
+  <section class="content">
+    <div class="card">
+      <h2>Frequently Asked Questions About Robotics Education</h2>
+      <p>
+        Find answers to common questions about robotics education from the perspectives of students, parents, and educators. Use the search bar below to quickly find relevant questions or submit your own concerns if you don’t find what you’re looking for. Our goal is to support your journey in robotics with clear, actionable information aligned with NEP 2020 and 30plus30’s mission. Visit <a href="https://30plus30.co.in" target="_blank">30plus30.co.in</a> for more details.
+      </p>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search for a question..." />
+      </div>
+
+      <!-- FAQ Items -->
+      <div class="faq-item">
+        <h3>Why should my child learn robotics? (Parent)</h3>
+        <p>
+          Robotics equips your child with 21st-century skills like coding, problem-solving, and creativity, preparing them for high-demand careers in AI, engineering, and technology. It aligns with NEP 2020’s focus on experiential learning, fostering critical thinking and innovation. <a href="https://cbseacademic.nic.in/skill-education.html" target="_blank">Learn about CBSE skill subjects</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is robotics hard to learn for beginners? (Student)</h3>
+        <p>
+          Robotics is approachable for beginners with hands-on, fun projects like building a simple robot car. Programs like 30plus30 start with basics, using tools like Scratch, and gradually introduce coding and electronics. <a href="https://www.code.org/" target="_blank">Try coding with Code.org</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How can I integrate robotics into my classroom? (Educator)</h3>
+        <p>
+          30plus30 offers teacher training, lesson plans, and robotics kits aligned with NEP 2020 and CBSE curricula. Start with Atal Tinkering Labs or skill modules to engage students in STEM. <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Explore Atal Tinkering Labs</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What age is suitable to start robotics? (Parent)</h3>
+        <p>
+          Children as young as 6 can start with tinkering activities, while ages 10+ can explore coding and advanced robotics. 30plus30’s programs are tailored for different age groups, ensuring age-appropriate learning. <a href="https://30plus30.co.in" target="_blank">Discover our programs</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do I need prior coding experience to learn robotics? (Student)</h3>
+        <p>
+          No prior coding experience is needed. Robotics programs introduce coding through visual tools like Blockly, making it easy to learn while building robots. <a href="https://scratch.mit.edu/" target="_blank">Start with Scratch</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What resources are available for teaching robotics? (Educator)</h3>
+        <p>
+          Resources include 30plus30’s training modules, CBSE’s AI Facilitator Handbook, and Intel’s AI resources. Atal Tinkering Labs provide kits and mentoring. <a href="https://www.intel.com/content/www/us/en/education/k12/artificial-intelligence.html" target="_blank">Access AI teaching resources</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are robotics programs expensive? (Parent)</h3>
+        <p>
+          Costs vary, but many schools offer robotics through Atal Tinkering Labs or CBSE skill subjects at no extra cost. 30plus30 provides affordable workshops with flexible options. Contact <a href="https://30plus30.co.in" target="_blank">30plus30</a> for pricing details.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can robotics help with college admissions? (Student)</h3>
+        <p>
+          Yes, robotics projects and competition wins (e.g., World Robot Olympiad) strengthen college applications, showcasing skills in STEM and innovation. <a href="https://www.worldrobotolympiad.org/" target="_blank">Explore WRO</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do robotics programs align with NEP 2020? (Educator)</h3>
+        <p>
+          NEP 2020 emphasizes coding and experiential learning from Grade 6. 30plus30’s programs integrate robotics, AI, and problem-solving, meeting these goals. <a href="https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English_0.pdf" target="_blank">Read NEP 2020</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What career opportunities does robotics offer? (Parent)</h3>
+        <p>
+          Robotics opens paths to careers like robotics engineering, AI specialist, and automation expert, with high demand in industries like healthcare and manufacturing. <a href="https://www.skillindia.gov.in/" target="_blank">Explore Skill India</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can girls excel in robotics? (Student)</h3>
+        <p>
+          Absolutely! Robotics is for everyone, and girls excel in competitions like FIRST Robotics. 30plus30 encourages diversity in STEM. <a href="https://www.firstinspires.org/robotics/frc" target="_blank">Join FIRST Robotics</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I assess the quality of a robotics program? (Parent)</h3>
+        <p>
+          Look for alignment with NEP 2020, hands-on projects, and experienced trainers. 30plus30 offers proven programs with student success stories. <a href="https://30plus30.co.in" target="_blank">Learn about our programs</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can robotics be learned online? (Student)</h3>
+        <p>
+          Yes, platforms like Coursera and 30plus30 offer online robotics courses with virtual simulations and coding exercises. <a href="https://www.coursera.org/courses?query=robotics" target="_blank">Explore Coursera robotics courses</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What equipment is needed for robotics education? (Educator)</h3>
+        <p>
+          Basic kits include microcontrollers, sensors, and motors, often provided by programs like 30plus30 or Atal Tinkering Labs. Software like Arduino IDE is free. <a href="https://www.arduino.cc/en/software" target="_blank">Download Arduino IDE</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How does robotics improve academic performance? (Parent)</h3>
+        <p>
+          Robotics enhances skills in math, science, and logical thinking, boosting grades and problem-solving abilities. It also fosters teamwork and creativity. <a href="https://cbseacademic.nic.in/" target="_blank">Explore CBSE resources</a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are there competitions for robotics students? (Student)</h3>
+        <p>
+          Yes, competitions like World Robot Olympiad, FIRST Robotics, and Atal Tinkering Marathon offer platforms to showcase skills. <a href="https://aim.gov.in/atal-tinkering-labs.php" target="_blank">Learn about ATL competitions</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Submit Your Concerns</h2>
+      <p>
+        If you didn’t find answers to your questions, please submit your concerns below. Our team at 30plus30 will respond promptly to help you navigate your robotics education journey. <a href="https://30plus30.co.in" target="_blank">Contact 30plus30</a> for more support.
+      </p>
+      <div class="form-container">
+        <form id="concernForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+
+          <label for="concern">Your Concern</label>
+          <textarea id="concern" name="concern" rows="5" placeholder="Describe your question or concern" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Generic loader for header & footer
+    function loadComponent(id, url) {
+      fetch(url)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
+
+    // Load header and footer without callback
+    loadComponent('header-placeholder', 'header.html');
+    loadComponent('footer-placeholder', 'footer.html');
+
+    // Load navbar and highlight active link
+    function includeHTML(id, file, callback) {
+      fetch(file)
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+          if (callback) callback();
+        });
+    }
+
+    includeHTML('navbar-placeholder', 'navbar.html', () => {
+      const path = window.location.pathname.split('/').pop().toLowerCase();
+
+      // Find all links inside navbar and add active class to matching href
+      const navLinks = document.querySelectorAll('#navbar-placeholder nav a');
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href').toLowerCase();
+        if (
+          href === path ||
+          (href === 'index.html' && (path === '' || path === 'index.html'))
+        ) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Search bar functionality
+    document.getElementById('searchBar').addEventListener('input', function () {
+      const searchTerm = this.value.toLowerCase();
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const question = item.querySelector('h3').textContent.toLowerCase();
+        const answer = item.querySelector('p').textContent.toLowerCase();
+        if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+
+    // Form submission (placeholder for demo)
+    document.getElementById('concernForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for submitting your concern! Our team will respond soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
